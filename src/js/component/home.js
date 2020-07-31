@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "./cards";
+import { Navbar } from "./navbar";
 
 let cardElements = [
 	{
@@ -27,7 +28,7 @@ let cardElements = [
 export function Home() {
 	return (
 		<div className="container-fluid text-center mt-5">
-			{/* Navbar Jumbotron */}
+			<Navbar /> {/* Navbar Jumbotron */}
 			<div className="row justify-content-md-center">
 				{cardElements.map((element, index) => {
 					return (
